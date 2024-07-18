@@ -24,7 +24,6 @@
         .container {
             /* background-color: rgb(255, 255, 255); */
             padding: 2%;
-            margin-bottom: 70px;
             font-family: "Roboto", sans-serif;
             font-weight: 300;
             font-style: normal;
@@ -52,6 +51,12 @@
             border-radius: 20px;
             padding: 3%;
             background-color: rgb(255, 255, 255);
+            max-height: 300px; /* Atur sesuai kebutuhan */
+            overflow-y: auto;
+        }
+        .main::-webkit-scrollbar{
+            width: 1px;
+            
         }
         .main-header {
             display: flex;
@@ -88,6 +93,12 @@
         .table td {
             /* background-color: #ffffff; */
             padding: 10px; /* Atur padding sesuai kebutuhan */
+        }
+        .table thead {
+            position: sticky;
+            top: 0;
+            background-color: #f9f9f9;
+            z-index: 1;
         }
         .flex-container {
             display: flex;
